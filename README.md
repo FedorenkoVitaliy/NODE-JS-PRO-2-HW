@@ -2,14 +2,10 @@ Public repository for Homework
 
 ## HW-03: HTTP/HTTPS сервер з нуля (net/tls)
 
-### Запуск
-
-```
-node src/server.js
-node src/https-server.js
-```
-
 ### Генерація self-signed сертифіката
+
+`*.pem` (виключені через `.gitignore`) — перед запуском 
+HTTPS-сервера їх треба згенерувати:
 
 ```
 openssl req -x509 -newkey rsa:2048 -nodes \
@@ -19,9 +15,12 @@ openssl req -x509 -newkey rsa:2048 -nodes \
   -config src/certs/openssl-san.cnf
 ```
 
-(`-config` замість `-addext`, бо системний macOS `openssl` — це LibreSSL, у ній
-немає прапорця `-addext`; конфіг `src/certs/openssl-san.cnf` закомічений і
-задає `subjectAltName=DNS:localhost`.)
+### Запуск
+
+```
+node src/server.js
+node src/https-server.js
+```
 
 ### Debug-сесія: openssl s_client
 
