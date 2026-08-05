@@ -17,7 +17,7 @@ export const responseHandler = (request) => {
                 headers: {
                     contentType: 'text/plain',
                 },
-                body: 'hello word'
+                body: 'hello world'
             };
         }
         case '/headers': {
