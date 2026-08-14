@@ -1,0 +1,7 @@
+node_modules
+Dockerfile
+.git
+.idea
+.vscode
+.env
+*.md
