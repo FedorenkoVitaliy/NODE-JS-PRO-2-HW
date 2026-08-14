@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "hw1-server": "node src/server.js"
+    "hw1-server": "node src/hw3/server.js"
   },
   "keywords": [],
   "author": "",
