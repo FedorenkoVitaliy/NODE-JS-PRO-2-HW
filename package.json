@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "hw1-server": "node src/hw3/server.js"
+    "hw1-server": "node src/hw3/server.js",
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^26.1.2"
+  },
+  "dependencies": {
+    "fastify": "^5.12.0"
   }
 }
